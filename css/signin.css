@@ -1,11 +1,11 @@
 .login{
-    background: linear-gradient(#21C08B, #AB88FF);
+    background: linear-gradient( #8f57fd, #21C08B);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0px 30px;
-    min-height: calc(100vw - 200px);
+    min-height: calc(100%vw - 200px);
 }
 
 .login__container{
@@ -16,6 +16,10 @@
     padding: 60px 68px 40px;
     min-height: 700px;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* filter: drop-shadow(30px 10px 4px #000000); */
 }
 
 .login__container--form{
@@ -54,5 +58,76 @@
 }
 
 .social__ico{
+    width: 30px;
+    margin-right: 10px;
     filter: invert(1);
+}
+
+.login__container--register{
+    font-size: 14px;
+}
+
+.login__container--register a{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login__container--register a:hover{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.input_underline{
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+::placeholder{
+    color: white;
+}
+.button{
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px 0px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #21C08B;
+}
+
+.footer a {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
